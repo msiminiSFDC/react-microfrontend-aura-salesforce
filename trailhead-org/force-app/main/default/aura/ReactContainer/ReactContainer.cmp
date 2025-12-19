@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable" access="global">
+    <aura:attribute name="targetRoute" type="String" default="/list-view" access="global" />
+
+    <ltng:require 
+        styles="{!$Resource.ReactApp + '/assets/style.css'}"
+        scripts="{!$Resource.ReactApp + '/assets/main.js'}"
+        afterScriptsLoaded="{!c.initReact}" 
+    />
+
+    <div aura:id="react-root" id="{!'react-root-container-' + v.targetRoute}" class="react-container slds-scope">
+        <lightning:spinner alternativeText="Loading..." size="medium" />
+    </div>
+</aura:component>

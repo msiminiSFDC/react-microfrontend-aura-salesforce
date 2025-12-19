@@ -1,0 +1,9 @@
+/* Exemplo de correção no App.css */
+
+/* Em vez de #root, use o ID do seu container ou uma classe wrapper */
+.sf-card {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center;  <-- Remova se não quiser tudo centralizado */
+}

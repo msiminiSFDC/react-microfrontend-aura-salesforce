@@ -1,0 +1,3 @@
+<design:component label="React Microfrontend">
+    <design:attribute name="targetRoute" label="Rota do React" description="Ex: /dashboard ou /customers" />
+</design:component>
